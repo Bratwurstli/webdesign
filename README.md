@@ -1,2 +1,2 @@
 # webdesign
-repository to create my own website
+ws to create my own website
