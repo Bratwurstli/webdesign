@@ -15,7 +15,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    line-height: 165%;
+    line-height: 180%;
 }
 
 a {
@@ -27,18 +27,27 @@ p {
 	line-height: 165%;
 }
 
-h1, h2 {
+h2 {
 	color: #2a3a3f;
 }
 
 h1 {
 	font-size: 2rem;
+	color: #b8b8b8;
 }
 
 /* landing page */
 
 #landing-page {
+	background-image: url(../images/small-back.jpg);
+	background-size: 100vw 100vh;
 	position: relative;
+	height: 100vh;
+}
+
+#landing-opa {
+	background-color: rgba(0,0,0,.8);
+	width: 100vw;
 	height: 100vh;
 }
 
@@ -46,18 +55,27 @@ h1 {
 	position: absolute;
 	bottom: 4vh;
 	font-size: 1.5rem;
-	left: calc(50% - 10.5px);
+	left: calc(20% - 10.5px);
 	transition: .8s;
+	color: #484848;
 }
 
 #landing-page a:hover, #landing-page a:focus {
-	color: #2a3a3f;
+	color: #b8b8b8;
 }
 
 #landing-content {
 	position: absolute;
 	top: calc(50% - 26vh);
 	left: calc(50% - 102px);
+}
+
+#landing-content ul {
+	margin-top: 8vh;
+	line-height: 200%;
+	color: #b8b8b8;
+	letter-spacing: 1.1px;
+	font-size: .8rem;
 }
 
 /* topics */
@@ -76,6 +94,7 @@ h1 {
 }
 
 .topic p {
+	line-height: 1.8;
 	font-size: .8rem;
 }
 
@@ -85,17 +104,63 @@ h1 {
 	color: #ff8c00;
 }
 
+.topic i {
+	font-size: 4rem;
+	margin-bottom: 3vh;
+}
+
 /* footer */
 
 footer {
-	margin: 13vh 0 4vh 0;
-	font-size: .9rem;
+	margin-top: 13vh;
+	padding: 7vh 0;
+	font-size: .8rem;
+	background-color: #3e3e3e;
+	color: #b8b8b8;
+	letter-spacing: 1.1px;
 }
 
 footer a {
-	font-size: .8rem;
+	font-size: .7rem;
+	color: #b8b8b8;
+	letter-spacing: normal;
 }
 
 footer a:hover, footer a:focus {
 	text-decoration: underline;
+}
+
+/* animations */
+
+/* langing page */
+
+#text-write {
+	overflow: hidden;
+	border-right: .15em solid orange;
+	white-space: nowrap;
+	animation: 
+		typing 3s steps(40, end),
+		blink-caret .75s step-end infinite;
+}
+
+#landing-content ul {
+	opacity: 0;
+	animation: 
+		list 2s linear 1s forwards;
+}
+
+@keyframes typing {
+  	from { width: 0 }
+  	to { width: 100% }
+}
+
+@keyframes blink-caret {
+  	from, to { border-color: transparent }
+  	50% { border-color: orange }
+}
+
+@keyframes list {
+	from { opacity: 0 }
+	to { opacity: 100 }
+}
 }
