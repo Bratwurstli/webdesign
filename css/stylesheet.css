@@ -131,6 +131,43 @@ footer a:hover, footer a:focus {
 	text-decoration: underline;
 }
 
+/* impressum */
+
+#impressum {
+	position: relative;
+	display: none;
+}
+
+#impressum address {
+	line-height: 1.8;
+	font-size: .8rem;	
+}
+
+#impressum address i {
+	margin-bottom: 0;
+	font-size: .8rem;
+}
+
+#impressum a {
+	padding: 0;
+	position: absolute;
+	top: 2vh;
+	right: 2vh;
+	background-color: #fff;
+	border: none;
+	transition: .8s;
+	color: #524e4d;
+}
+
+#impressum a i {
+	margin-bottom: 0;
+	font-size: 1.5rem;
+}
+
+#impressum a:hover, #impressum a:focus {
+	color: #282828;
+} 
+
 /* animations */
 
 /* langing page */
