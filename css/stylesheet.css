@@ -115,14 +115,14 @@ h1 {
 footer {
 	margin-top: 13vh;
 	padding: 7vh 0 4vh 0;
-	font-size: .85rem;
+	font-size: .8rem;
 	background-color: #3e3e3e;
 	color: #b8b8b8;
 	letter-spacing: 1.1px;
 }
 
 footer a {
-	font-size: .75rem;
+	font-size: .7rem;
 	color: #b8b8b8;
 	letter-spacing: normal;
 }
@@ -134,12 +134,13 @@ footer a:hover, footer a:focus {
 /* impressum */
 
 #impressum {
+	padding: 1vh;
 	display: none;
 	border: 1px solid;
 	border-radius: 5px;
 	width: 50%;
 	margin: 2vh auto;
-	font-size: .75rem;
+	font-size: .7rem;
 	letter-spacing: normal;
 	line-height: 190%;
 }
