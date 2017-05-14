@@ -141,6 +141,7 @@ footer a:hover, footer a:focus {
 	margin: 2vh auto;
 	font-size: .75rem;
 	letter-spacing: normal;
+	line-height: 190%;
 }
 
 /* animations */
