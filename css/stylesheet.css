@@ -16,7 +16,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    line-height: 180%;
+    line-height: 190%;
 }
 
 a {
@@ -115,14 +115,14 @@ h1 {
 footer {
 	margin-top: 13vh;
 	padding: 7vh 0 4vh 0;
-	font-size: .8rem;
+	font-size: .85rem;
 	background-color: #3e3e3e;
 	color: #b8b8b8;
 	letter-spacing: 1.1px;
 }
 
 footer a {
-	font-size: .7rem;
+	font-size: .75rem;
 	color: #b8b8b8;
 	letter-spacing: normal;
 }
@@ -134,36 +134,14 @@ footer a:hover, footer a:focus {
 /* impressum */
 
 #impressum {
-	position: relative;
 	display: none;
+	border: 1px solid;
+	border-radius: 5px;
+	width: 50%;
+	margin: 2vh auto;
+	font-size: .75rem;
+	letter-spacing: normal;
 }
-
-#impressum address {
-	line-height: 1.8;
-	font-size: .8rem;	
-}
-
-#impressum address i {
-	margin-bottom: 0;
-	font-size: .8rem;
-}
-
-#impressum a {
-	padding: 0;
-	position: absolute;
-	top: 4vh;
-	right: 2vh;
-	background-color: #fff;
-	border: none;
-	transition: .8s;
-	color: #524e4d;
-	font-size: 1.5rem;
-	line-height: 100%;
-}
-
-#impressum a:hover, #impressum a:focus {
-	color: #282828;
-} 
 
 /* animations */
 
