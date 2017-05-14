@@ -151,17 +151,14 @@ footer a:hover, footer a:focus {
 #impressum a {
 	padding: 0;
 	position: absolute;
-	top: 2vh;
+	top: 4vh;
 	right: 2vh;
 	background-color: #fff;
 	border: none;
 	transition: .8s;
 	color: #524e4d;
-}
-
-#impressum a i {
-	margin-bottom: 0;
 	font-size: 1.5rem;
+	line-height: 100%;
 }
 
 #impressum a:hover, #impressum a:focus {
