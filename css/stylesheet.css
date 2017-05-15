@@ -102,7 +102,7 @@ h1 {
 .topic a:hover, .topic a:focus {
 	background-color: #524e4d;
 	padding: .3rem 1.6rem;
-	color: #ff8c00;
+	color: orange;
 }
 
 .topic i {
@@ -113,12 +113,24 @@ h1 {
 /* footer */
 
 footer {
-	margin-top: 13vh;
-	padding: 7vh 0 4vh 0;
-	font-size: .8rem;
+	margin-top: 0;
+	padding: 0;
+	font-size: .75rem;
 	background-color: #3e3e3e;
 	color: #b8b8b8;
 	letter-spacing: 1.1px;
+}
+
+footer p {
+	margin: 0;
+	background-color: #212121;
+	padding: 4vh 0;
+}
+
+footer ul {
+	padding: 4vh 0;
+	margin-top: 13vh; 
+	border-top: 2px solid orange;
 }
 
 footer a {
@@ -150,7 +162,7 @@ footer a:hover, footer a:focus {
 #impressum {
 	padding: 1vh;
 	border-radius: 10px;
-	width: 50%;
+	width: 55%;
 	margin: 2vh auto;
 	font-size: .7rem;
 	font-style: normal;
