@@ -150,9 +150,11 @@ footer a:hover, footer a:focus {
 #impressum {
 	padding: 1vh;
 	border-radius: 10px;
-	width: 30%;
+	width: 50%;
 	margin: 2vh auto;
 	font-size: .7rem;
+	font-style: normal;
+	text-align: left;
 	line-height: 190%;
 	background-color: #212121;
 }
