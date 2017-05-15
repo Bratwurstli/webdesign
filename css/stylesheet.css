@@ -127,6 +127,20 @@ footer a {
 	letter-spacing: normal;
 }
 
+footer details {
+	font-size: .7rem;
+	letter-spacing: normal;
+}
+
+footer details summary {
+	cursor: pointer;
+	display: inline-block;
+}
+
+footer details summary:hover, footer details summary:focus {
+	text-decoration: underline;
+}
+
 footer a:hover, footer a:focus {
 	text-decoration: underline;
 }
@@ -135,14 +149,12 @@ footer a:hover, footer a:focus {
 
 #impressum {
 	padding: 1vh;
-	display: none;
-	border: 1px solid;
-	border-radius: 5px;
-	width: 50%;
+	border-radius: 10px;
+	width: 30%;
 	margin: 2vh auto;
 	font-size: .7rem;
-	letter-spacing: normal;
 	line-height: 190%;
+	background-color: #212121;
 }
 
 /* animations */

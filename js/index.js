@@ -1,7 +1,7 @@
 // impressum
 
 // first impressum is hidden
-var impHide = 1;
+/*var impHide = 1;
 
 function impressum() {
 	if (impHide == 1) {
@@ -12,4 +12,4 @@ function impressum() {
 		document.getElementById("impressum").style.display = "none";
 		impHide = 1;
 	}
-}
+}*/
