@@ -10,33 +10,31 @@
 </head>
 <body>
 
+	<!-- quick and dirty solution for background image-->
+	<div id="background"></div>
+
+	<!-- js files -->
+	<script src="js/stickyHeader.js"></script>
+
 	<!-- header information -->
-	<header><h3>Sven Mengler</h3><a href=""><i class="fa fa-github-square" aria-hidden="true"></i></a><a href=""><i class="fa fa-xing-square" aria-hidden="true"></i></a></header>
+	<header id="header"><h3>Sven Mengler</h3><a href="https://github.com/Sven90" target="_blank" title="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a><a href="https://www.xing.com/profile/Sven_Mengler?sc_o=mxb_p" target="_blank" title="Xing"><i class="fa fa-xing-square" aria-hidden="true"></i></a></header>
 
 	<!-- landing page -->
 	<div id="landing-page"><h1>Text 1</h1></div>
 
 	<!-- contact form -->
-	<div class="contact-form">
-		<form action="/action_page.php">
-			<label for="fname">First Name</label>
-			<input type="text" id="fname" name="firstname" placeholder="Your Name">
-
-			<label for="lname">Last Name</label>
-			<input type="text" id="lname" name="lastname" placeholder="Your Last Name">
-
-			<label for="email">E-mail</label>
-			<input type="text" id="email" name="email" placeholder="Your E-mail">
-
-			<label for="message">Message</label>
-			<textarea id="message" name="message" placeholder="Your Message"></textarea>
-
-			<input type="submit" value="Submit">									
+	<div id="contact-form">
+		<form action="/action_page.php" method="post">
+			<p>Schreibe mir</p>
+			<input type="text" name="name" placeholder="dein Name">
+			<input type="text" name="email" placeholder="deine E-mail Adresse">
+			<textarea name="message" placeholder="deine Nachricht" rows="10" cols="30"></textarea>
+			<input type="submit" value="Los geht's">									
 		</form>
 	</div>
 
 	<!-- footer information -->
-	<footer><p>Copy Text</p></footer>
+	<footer><p>Made by me &copy; 2017</p></footer>
 
 </body>
 </html>
