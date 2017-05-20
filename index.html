@@ -6,6 +6,7 @@
 	<title>working title</title>
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 <body>
 
@@ -16,6 +17,23 @@
 	<div id="landing-page"><h1>Text 1</h1></div>
 
 	<!-- contact form -->
+	<div class="contact-form">
+		<form action="/action_page.php">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your Name">
+
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your Last Name">
+
+			<label for="email">E-mail</label>
+			<input type="text" id="email" name="email" placeholder="Your E-mail">
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Your Message"></textarea>
+
+			<input type="submit" value="Submit">									
+		</form>
+	</div>
 
 	<!-- footer information -->
 	<footer><p>Copy Text</p></footer>
