@@ -1,0 +1,102 @@
+/* mobile first */
+
+
+body {
+	margin: 0;
+}
+
+/* page background */
+
+/* this is a quick and dirty solution */
+#background {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: url(../images/small-back.jpg) no-repeat center;
+	background-size: cover;
+	opacity: .5;
+	z-index: -1;
+}
+
+/* header */
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	/* floating will move outside the header */
+	overflow: auto;
+	transition: background-color .5s linear;
+}
+
+header > h3 {
+	font-size: 1.3em;
+	margin: 5px 5px;
+	font-weight: normal;
+	float: left;
+}
+
+header > a {
+	color: black;
+	font-size: 1.3em;
+	margin: 5px 15px;
+	float: right;
+}
+
+header.stickyHeader {
+	background-color: lightblue;
+}
+
+/* landing page */
+
+#landing-page {
+	position: relative;
+	padding:60px 0 0 0;
+	height: calc(100vh - 60px);
+	z-index: -1;
+}
+
+#landing-page > h1 {
+	margin: 0;
+	width: 100%;
+	position: absolute;
+	top: calc(50vh - 19px);
+	text-align: center;
+}
+
+/* contact form */
+
+#contact-form {
+	padding: 30px 0;
+	background-color: red;
+}
+
+#contact-form > form {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#contact-form > form > p {
+	text-align: center;
+}
+
+#contact-form > form > p, #contact-form > form > input, #contact-form > form > textarea {
+	margin: 20px auto;
+	display: block;
+}
+
+#contact-form > form > :first-child, #contact-form > form > :last-child {
+	margin: 0 auto;
+}
+
+/* footer */
+
+footer {
+	padding: 25px 0;
+	text-align: center;
+	background-color: lightgrey;
+}
+
+footer > p {
+	margin: 0;
+}
