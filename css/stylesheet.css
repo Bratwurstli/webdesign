@@ -18,7 +18,7 @@ body {
 	z-index: -1;
 }
 
-/* header */
+/* header ----------------------------------------------------------------------------------------*/
 
 header {
 	position: fixed;
@@ -47,7 +47,7 @@ header.stickyHeader {
 	background-color: lightblue;
 }
 
-/* landing page */
+/* landing page ----------------------------------------------------------------------------------*/
 
 #landing-page {
 	position: relative;
@@ -64,7 +64,25 @@ header.stickyHeader {
 	text-align: center;
 }
 
-/* contact form */
+/* blinking cursor */
+.blinking-cursor {
+	color: black;
+	animation: 1s blink linear infinite;
+}
+
+@keyframes blink {
+	0% {
+		color: transparent;
+	}
+	50% {
+		color: black;
+	}
+	100% {
+		color: transparent;
+	}
+}
+
+/* contact form ----------------------------------------------------------------------------------*/
 
 #contact-form {
 	padding: 30px 0;
@@ -89,7 +107,7 @@ header.stickyHeader {
 	margin: 0 auto;
 }
 
-/* footer */
+/* footer ----------------------------------------------------------------------------------------*/
 
 footer {
 	padding: 25px 0;

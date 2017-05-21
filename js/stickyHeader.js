@@ -2,8 +2,6 @@
 
 // sticky header
 
-window.onscroll = function() {stickyHeader()};
-
 function stickyHeader() {
 	if (document.documentElement.scrollTop > 1) {
 		document.getElementById("header").className = "stickyHeader";
@@ -12,3 +10,5 @@ function stickyHeader() {
 		document.getElementById("header").className = "";
 	}
 }
+
+window.onscroll = function() {stickyHeader()};

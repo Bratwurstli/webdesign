@@ -10,21 +10,21 @@
 </head>
 <body>
 
+	<script src="js/stickyHeader.js"></script>
+	<script src="js/changeWords.js"></script>
+
 	<!-- quick and dirty solution for background image-->
 	<div id="background"></div>
-
-	<!-- js files -->
-	<script src="js/stickyHeader.js"></script>
 
 	<!-- header information -->
 	<header id="header"><h3>Sven Mengler</h3><a href="https://github.com/Sven90" target="_blank" title="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a><a href="https://www.xing.com/profile/Sven_Mengler?sc_o=mxb_p" target="_blank" title="Xing"><i class="fa fa-xing-square" aria-hidden="true"></i></a></header>
 
 	<!-- landing page -->
-	<div id="landing-page"><h1>Text 1</h1></div>
+	<div id="landing-page"><h1><span id="words">Mathematiker</span><span class="blinking-cursor">|</span></h1></div>
 
 	<!-- contact form -->
 	<div id="contact-form">
-		<form action="/action_page.php" method="post">
+		<form action="" method="post">
 			<p>Schreibe mir</p>
 			<input type="text" name="name" placeholder="dein Name">
 			<input type="text" name="email" placeholder="deine E-mail Adresse">
