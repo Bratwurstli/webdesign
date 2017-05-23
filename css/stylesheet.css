@@ -9,14 +9,21 @@ body {
 /* page background */
 
 /* this is a quick and dirty solution */
-#background {
+#background-image {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
 	background: url(../images/small-back.jpg) no-repeat center;
 	background-size: cover;
-	opacity: .5;
-	z-index: -1;
+	z-index: -2;
+}
+
+#background-color {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(34, 176, 201, .3);
+	z-index: -2;
 }
 
 /* header ----------------------------------------------------------------------------------------*/
@@ -65,8 +72,15 @@ header.stickyHeader {
 	text-align: center;
 }
 
+#words {
+	position: relative;
+	left: 12.5px;
+}
+
 /* blinking cursor */
 .blinking-cursor {
+	position: relative;
+	left: 12.5px;
 	color: black;
 	animation: 1s blink linear infinite;
 }
