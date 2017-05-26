@@ -1,69 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sven Mengler</title>
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!-- font awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">   
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> 
 </head>
 <body>
-<section id="landing-page">
-	<div id="landing-opa">
-	<div id="landing-content">
-	<h1>Hi,</h1> 
-	<h1 id="text-write">ich bin Sven</h1>
-	<ul>
-		<li>Mathematik (B.Sc.)</li>
-		<li>Informatik (Anwendung)</li>
-	</ul>
+
+	<script src="js/stickyHeader.js"></script>
+	<script src="js/changeWords.js"></script>
+
+	<!-- quick and dirty solution for background image with color-->
+	<div id="background-image"></div>
+	<div id="background-color"></div>
+
+	<!-- header information -->
+	<header id="header"><h3>Sven Mengler</h3><a href="https://github.com/Sven90" target="_blank" title="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a><a href="https://www.xing.com/profile/Sven_Mengler?sc_o=mxb_p" target="_blank" title="Xing"><i class="fa fa-xing-square" aria-hidden="true"></i></a></header>
+
+	<!-- landing page -->
+	<div id="landing-page"><h1><span id="words"></span><span class="blinking-cursor">&#x258f;</span></h1></div>
+
+	<!-- contact form -->
+	<div id="contact-form">
+		<form action="form.php" method="post">
+			<p>Questions ?</p>
+			<input type="text" name="name" placeholder="your name">
+			<input type="text" name="email" placeholder="your mail">
+			<textarea name="message" placeholder="your message" rows="10"></textarea>
+			<input type="submit" value="send">									
+		</form>
 	</div>
-	<a href="#topics"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
-	</div>
-</section>
-<section id="topics">
-	<div class="topic">
-		<i class="fa fa-microphone" aria-hidden="true"></i>
-		<h2>Signalverarbeitung</h2>
-		<p>Was passiert eigentlich wenn wir mit unserer Fotokamera ein Bild, oder mit einem Mikrofon ein Geräusch aufnehmen ? Begriffe wie "Fourier Analysis" oder "LTI System" sind für mich keine Fremdwörter. Momentan arbeite ich an einem Paket zur Signalverarbeitung.</p>
-		<br>
-		<a href="https://github.com/Sven90/signal-processing" target="_blank">signal processing</a>
-	</div>
-	<div class="topic">
-		<i class="fa fa-line-chart" aria-hidden="true"></i>
-		<h2>Analytics</h2>
-		<p>Hat man die Daten einmal aufgenommen, müssen diese verarbeitet werden. In R habe ich Market Basket Analysis für ein Startup aus Osnabrück umgesetzt und aktuell schreibe ich meine Masterarbeit zum Thema Bildanalyse. Das "simDiag" Projekt ist dabei ein sehr wichtiges Tool.</p>
-		<br>
-		<a href="https://github.com/Sven90/sim-diag-matlab" target="_blank">simDiag</a>
-	</div>
-	<div class="topic">
-		<i class="fa fa-file-code-o" aria-hidden="true"></i>
-		<h2>Webdesign</h2>
-		<p>Seit 2 Jahren befasse ich mich mit Html, CSS und JavaScript. Es macht mir Spaß Webseiten benutzerfreundlich zu Gestalten und auf Details zu achten. Wer wissen möchte wie diese Seite entstanden ist, darf gern auf den Link klicken.</p>
-		<br>
-		<a href="https://github.com/Sven90/webdesign" target="_blank">webdesign</a>
-	</div>
-</section>
-<footer>
-	<ul>
-		<li><details>
-			<summary>Impressum</summary>
-			<address id="impressum">
-			Sven Mengler<br>
-			Wasserbreite 20<br>
-			32257 Bünde<br>
-			Germany<br>
-			Tel.: +49 176 456 120 20<br>
-			E-Mail: info@svenmengler.de<br>
-			</address>
-		</details></li>
-		<li><a href="https://github.com/Sven90" target="_blank">GitHub</a></li>
-		<li><a href="http://fontawesome.io/" target="_blank">Icons</a></li>
-		<li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
-		<li><a href="https://pixabay.com/en/" target="_blank">Backgrounds</a></li>
-	</ul>
-	<p id="copy">Made by me &copy; 2017</p>
-</footer>
+
+	<!-- footer information -->
+	<footer><p>made by me &copy; 2017</p></footer>
+
 </body>
 </html>
