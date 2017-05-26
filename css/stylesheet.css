@@ -4,6 +4,7 @@
 body {
 	min-width: 320px;
 	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* page background */
@@ -22,7 +23,7 @@ body {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(34, 176, 201, .3);
+	background-color: rgba(45, 45, 45, .2);
 	z-index: -2;
 }
 
@@ -35,24 +36,35 @@ header {
 	/* floating will move outside the header */
 	overflow: auto;
 	transition: background-color .5s linear;
+    font-family: 'Varela Round', sans-serif;
+	box-shadow: 0 1px 2px black;
 }
 
 header > h3 {
-	font-size: 1.3em;
-	margin: 5px 5px;
-	font-weight: normal;
+	margin: 5px 15px;
 	float: left;
+	color: white;
+	text-transform: lowercase;
+	line-height: 38px;
+	font-size: 20px;
 }
 
 header > a {
-	color: black;
-	font-size: 1.3em;
+	color: white;
+	font-size: 20px;
 	margin: 5px 15px;
 	float: right;
+	line-height: 38px;
+	transition: color .1s ease;
+	text-shadow: 2px 2px 5px black;
+}
+
+header > a:hover, header > a:focus {
+	color: #cf4a4a;
 }
 
 header.stickyHeader {
-	background-color: lightblue;
+	background-color: rgba(0, 0, 0, .3);
 }
 
 /* landing page ----------------------------------------------------------------------------------*/
@@ -70,18 +82,20 @@ header.stickyHeader {
 	position: absolute;
 	top: calc(50vh - 19px);
 	text-align: center;
+	color: white;
+	font-family: 'Special Elite', cursive;
+	font-weight: normal;
 }
 
 #words {
 	position: relative;
-	left: 12.5px;
+	left: 12px;
 }
 
 /* blinking cursor */
 .blinking-cursor {
 	position: relative;
-	left: 12.5px;
-	color: black;
+	left: 12px;
 	animation: 1s blink linear infinite;
 }
 
@@ -90,7 +104,7 @@ header.stickyHeader {
 		color: transparent;
 	}
 	50% {
-		color: black;
+		color: white;
 	}
 	100% {
 		color: transparent;
@@ -101,7 +115,8 @@ header.stickyHeader {
 
 #contact-form {
 	padding: 30px 0;
-	background-color: red;
+	background-color: rgba(236, 181, 62, 0.95);
+	border-bottom: 2px solid #c9840e;
 }
 
 #contact-form > form {
@@ -114,22 +129,77 @@ header.stickyHeader {
 }
 
 #contact-form > form > p, #contact-form > form > input, #contact-form > form > textarea {
-	margin: 20px auto;
 	display: block;
+	margin: 20px auto;
+	font-family: 'Lato', georgia;
+	font-size: 25px;
+	color: white;
+}
+
+#contact-form > form > input, #contact-form > form > textarea {
+	border-radius: 10px;
+	background: none;	
+	width: calc(90% - 30px);
+	padding: 15px;
+	border: 2px dashed white;
+}
+
+
+#contact-form > form > :last-child:hover, #contact-form > form > :last-child:focus {
+	background-color: rgba(136, 81, 4, 0.95);
+}
+
+#contact-form > form > :last-child:active {
+	border: inset #c9840e;
 }
 
 #contact-form > form > :first-child, #contact-form > form > :last-child {
 	margin: 0 auto;
 }
 
+#contact-form > form > :last-child {
+	text-align: center;
+	cursor: pointer;
+	border: outset #c9840e;
+	padding: 10px;
+	width: 120px;
+	transition: background-color .1s ease;
+	margin-top: 30px;
+}
+
+#contact-form > form > :first-child {
+	margin-bottom: 30px;
+}
+
 /* footer ----------------------------------------------------------------------------------------*/
 
 footer {
-	padding: 25px 0;
+	padding: 50px 0;
 	text-align: center;
-	background-color: lightgrey;
+	background-color: #2a3a3f;
+	color: rgba(255, 255, 255, .4);
 }
 
 footer > p {
 	margin: 0;
+	font-size: 13px;
+}
+
+
+/* large screen */
+
+
+@media screen and (min-width: 650px) {
+    
+    #background-image {
+    	background: url(../images/large-back.jpg) no-repeat center;
+    }
+
+    #contact-form > form {
+		width: 65%;
+	}
+
+	#contact-form > form > input, #contact-form > form > textarea {	
+		width: calc(65% - 30px);
+	}	
 }
