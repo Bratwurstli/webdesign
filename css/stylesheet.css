@@ -35,6 +35,9 @@ header {
 	top: 0;
 	/* floating will move outside the header */
 	overflow: auto;
+	-webkit-transition: background-color .5s linear;
+	-moz-transition: background-color .5s linear;
+	-o-transition: background-color .5s linear;
 	transition: background-color .5s linear;
     font-family: 'Varela Round', sans-serif;
 	box-shadow: 0 1px 2px black;
@@ -55,6 +58,9 @@ header > a {
 	margin: 5px 15px;
 	float: right;
 	line-height: 38px;
+	-webkit-transition: color .1s ease;
+	-moz-transition: color .1s ease;
+	-o-transition: color .1s ease;
 	transition: color .1s ease;
 	text-shadow: 2px 2px 5px black;
 }
@@ -87,16 +93,48 @@ header.stickyHeader {
 	font-weight: normal;
 }
 
-#words {
-	position: relative;
-	left: 12px;
-}
-
 /* blinking cursor */
 .blinking-cursor {
-	position: relative;
-	left: 12px;
+	-webkit-animation: 1s blink linear infinite;
+	-moz-animation: 1s blink linear infinite;
+	-o-animation: 1s blink linear infinite;
 	animation: 1s blink linear infinite;
+}
+
+@-webkit-keyframes blink {
+	0% {
+		color: transparent;
+	}
+	50% {
+		color: white;
+	}
+	100% {
+		color: transparent;
+	}
+}
+
+@-moz-keyframes blink {
+	0% {
+		color: transparent;
+	}
+	50% {
+		color: white;
+	}
+	100% {
+		color: transparent;
+	}
+}
+
+@-o-keyframes blink {
+	0% {
+		color: transparent;
+	}
+	50% {
+		color: white;
+	}
+	100% {
+		color: transparent;
+	}
 }
 
 @keyframes blink {
@@ -163,12 +201,27 @@ header.stickyHeader {
 	border: outset #c9840e;
 	padding: 10px;
 	width: 120px;
+	-webkit-transition: background-color .1s ease;
+	-moz-transition: background-color .1s ease;
+	-o-transition: background-color .1s ease;
 	transition: background-color .1s ease;
 	margin-top: 30px;
 }
 
 #contact-form > form > :first-child {
 	margin-bottom: 30px;
+}
+
+*::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, .5);
+}
+
+*:-ms-input-placeholder {
+	color: rgba(255, 255, 255, .5);
+}
+
+*::-ms-input-placeholder {
+	color: rgba(255, 255, 255, .5);
 }
 
 /* footer ----------------------------------------------------------------------------------------*/
@@ -193,6 +246,7 @@ footer > p {
     
     #background-image {
     	background: url(../images/large-back.jpg) no-repeat center;
+    	background-size: cover;
     }
 
     #contact-form > form {
