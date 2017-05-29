@@ -55,7 +55,8 @@ header > h3 {
 header > a {
 	color: white;
 	font-size: 20px;
-	margin: 5px 15px;
+	padding: 0 9.5px;
+	margin: 5px 5.5px;
 	float: right;
 	line-height: 38px;
 	-webkit-transition: color .1s ease;
