@@ -43,31 +43,27 @@ header {
 	box-shadow: 0 1px 2px black;
 }
 
-header > h2 {
-	margin: 5px 15px;
-	float: left;
-	color: white;
-	text-transform: lowercase;
-	line-height: 38px;
-	font-size: 20px;
-}
-
 header > a {
 	color: white;
 	font-size: 20px;
-	padding: 0 9.5px;
-	margin: 5px 5.5px;
+	padding: 0 10.5px;
+	margin: 5px 5px;
 	float: right;
 	line-height: 38px;
-	-webkit-transition: color .1s ease;
-	-moz-transition: color .1s ease;
-	-o-transition: color .1s ease;
-	transition: color .1s ease;
-	text-shadow: 2px 2px 5px black;
+	-webkit-transition: background-color .1s ease;
+	-moz-transition: background-color .1s ease;
+	-o-transition: background-color .1s ease;
+	transition: background-color .1s ease;
+	text-shadow: 1px 1px 2px black;
+	border-radius: 19px;
+}
+
+header > a.menu {
+	float: left;
 }
 
 header > a:hover, header > a:focus {
-	color: #cf4a4a;
+	background-color: rgba(0, 0, 0, .9);
 }
 
 header.stickyHeader {
@@ -78,16 +74,17 @@ header.stickyHeader {
 
 #landing-page {
 	position: relative;
-	padding:60px 0 0 0;
-	height: calc(100vh - 60px);
+	padding:48px 0 0 0;
+	height: calc(100vh - 48px);
 	z-index: -1;
 }
 
 #landing-page > h1 {
+	line-height: 150%;
 	margin: 0;
 	width: 100%;
 	position: absolute;
-	top: calc(50vh - 19px);
+	top: calc(50vh - 48px);
 	text-align: center;
 	color: white;
 	font-family: 'Special Elite', cursive;
