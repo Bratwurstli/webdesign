@@ -18,17 +18,23 @@
 </head>
 <body>
 
-	<!-- jQuery lib
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<!-- jQuery lib -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/stickyHeader.js"></script>
 	<script src="js/changeWords.js"></script>
+	<script src="js/navBar.js"></script>
 
 	<!-- quick and dirty solution for background image with color-->
 	<div id="background-image"></div>
 	<div id="background-color"></div>
 
-	<!-- header information -->
-	<header id="header"><a class="menu" href="javascript:void(0)"><i class="fa fa-bars" aria-hidden="true"></i></a><a class="icon" href="https://github.com/Sven90" target="_blank" title="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a><a class="icon" href="https://www.xing.com/profile/Sven_Mengler?sc_o=mxb_p" target="_blank" title="Xing"><i class="fa fa-xing-square" aria-hidden="true"></i></a></header>
+	<!-- header -->
+	<header id="header"><a id="nav-btn" class="menu" href="javascript:void(0)"><i class="fa fa-bars" aria-hidden="true"></i></a><a class="icon" href="https://github.com/Sven90" target="_blank" title="GitHub"><i class="fa fa-github-square" aria-hidden="true"></i></a><a class="icon" href="https://www.xing.com/profile/Sven_Mengler?sc_o=mxb_p" target="_blank" title="Xing"><i class="fa fa-xing-square" aria-hidden="true"></i></a></header>
+
+	<!-- nav bar -->
+	<ul id="nav-bar">
+		<li><a href="javascript:void(0)">Impressum</a></li>
+	</ul>
 
 	<!-- landing page -->
 	<div id="landing-page"><h1>Hi, I'm Sven. I do...<br><span id="words"></span><span class="blinking-cursor">|</span></h1></div>
