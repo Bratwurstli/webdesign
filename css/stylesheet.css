@@ -74,27 +74,28 @@ header.stickyHeader {
 
 #nav-bar {
 	position: fixed;
+	/*left: -126px;*/
 	top: 48px;
 	list-style: none;
 	margin: 0;
-	padding: 18px 36px 18px 18px;
-	background-color: rgba(0, 0, 0, .7);
-	border-radius: 0 0 50px 0;
+	padding: 0;
 }
 
 #nav-bar a {
+	display: inline-block;
 	text-decoration: none;
 	color: #fff;
-	padding: 3px 7px 7px 7px;
-	-webkit-transition: background-color .1s ease;
-	-moz-transition: background-color .1s ease;
-	-o-transition: background-color .1s ease;
-	transition: background-color .1s ease;
-	border-radius: 8px 0 8px 0;
+	padding: 14px 36px 14px 14px;
+	background-color: rgba(0, 0, 0, .9);
+	border-radius: 0 0 24px 0;
+	-webkit-transition: padding .6s ease;
+	-moz-transition: padding .6s ease;
+	-o-transition: padding .6s ease;
+	transition: padding .6s ease;
 }
 
 #nav-bar a:hover, #nav-bar a:focus {
-	background-color: rgba(0, 0, 0, .9);
+	padding-right: 60px;
 }
 
 /* landing page ----------------------------------------------------------------------------------*/
