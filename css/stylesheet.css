@@ -73,6 +73,7 @@ header.stickyHeader {
 /* nav bar ---------------------------------------------------------------------------------------*/
 
 #nav-bar {
+	display: none;
 	position: fixed;
 	/*left: -126px;*/
 	top: 48px;
